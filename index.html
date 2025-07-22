@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Modern Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">E-Shop</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" class="nav-icon wishlist-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-item-count">0</span>
+                </a>
+                <a href="cart.html" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+                <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar-container" id="search-bar-container">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="mobile-nav-menu">
+             <a href="index.html">Home</a>
+             <a href="products.html">Products</a>
+             <a href="about.html">About Us</a>
+             <a href="contact.html">Contact</a>
+             <hr>
+             <a href="wishlist.html">Wishlist</a>
+             <a href="cart.html">Cart</a>
+             <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Your Style</h1>
+                <p>New Arrivals are Here. Unbeatable Prices, Unforgettable Style.</p>
+                <a href="products.html" class="btn">Shop Collection</a>
+            </div>
+        </section>
+
+        <section class="promo-banner-large" style="background-image: url('images/banner/max-letek-4vEHXvSXBRU-unsplash.jpg');">
+            <div class="promo-content">
+                <h2>Summer Sale Extravaganza</h2>
+                <p>Get up to 50% off on selected fashion items. Don't miss out!</p>
+                <a href="products.html?category=Fashion" class="btn">Shop Fashion</a>
+            </div>
+        </section>
+
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featured-products-grid">
+                </div>
+        </section>
+        
+        <section class="promo-banner-dual">
+            <div class="promo-card" style="background-image: url('images/banner/103E3AA9-1630-41B0-845B-F8CFBFA28E82.jpeg');">
+                <div class="promo-content">
+                    <h3 >Latest in Tech</h3>
+                    <p>Explore the newest gadgets.</p>
+                    <a href="products.html?category=Electronics" class="btn">View Gadgets</a>
+                </div>
+            </div>
+            <div class="promo-card" style="background-image: url('images/bed.jpg');">
+                <div class="promo-content">
+                    <h3>Home & Living</h3>
+                    <p>Spruce up your space.</p>
+                    <a href="products.html?category=Home" class="btn">Explore Home</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>E-Shop</h3>
+                <p>Your one-stop shop for everything you need.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

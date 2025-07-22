@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="products-page-body">
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">E-Shop</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" class="nav-icon wishlist-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-item-count">0</span>
+                </a>
+                <a href="cart.html" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+                <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar-container" id="search-bar-container">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="mobile-nav-menu">
+             <a href="index.html">Home</a>
+             <a href="products.html">Products</a>
+             <a href="about.html">About Us</a>
+             <a href="contact.html">Contact</a>
+             <hr>
+             <a href="wishlist.html">Wishlist</a>
+             <a href="cart.html">Cart</a>
+             <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main class="products-page-main">
+        <aside class="filter-sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Home">Home</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="Books">Books</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" id="price-filter" min="0" max="1000" value="1000" step="10">
+                <span id="price-value">$1000</span>
+            </div>
+            <div class="filter-group">
+                <h4>Sort By</h4>
+                <select id="sort-filter">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating-desc">Rating: High to Low</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="product-listing">
+            <h1 id="listing-title">All Products</h1>
+            <div class="product-grid" id="products-grid">
+                </div>
+            <div class="pagination" id="pagination-controls">
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+         <div class="footer-content">
+            <div class="footer-section">
+                <h3>E-Shop</h3>
+                <p>Your one-stop shop for everything you need.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
