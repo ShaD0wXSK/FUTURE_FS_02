@@ -2,7 +2,7 @@
 
 This project is a modern, fully responsive mini e-commerce website developed as **Task 2** for the **Future Interns Web Development Internship**. It showcases a range of features expected from an online store, built using fundamental web technologies: HTML, CSS, and vanilla JavaScript.
 
-**Live Demo:** [Link to your deployed website here](https://example.com)
+**Live Demo:** [Link to your deployed website here](https://shad0wxsk.github.io/E-shop/)
 
 ---
 
@@ -98,7 +98,7 @@ To run this project locally, follow these simple steps:
 
 ## 👤 Author
 
-* **Name:** [Your Name]
+* **Name:** [Suman Kirtania]
 * **Internship:** Future Interns - Web Development
 
 ---
